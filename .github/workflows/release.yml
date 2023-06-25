@@ -34,4 +34,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: Spacedrive-Windows-msi-${{ inputs.target }}-${{ env.GITHUB_SHA_SHORT }}
-          path: target/
+          path: target/**/*.msi
